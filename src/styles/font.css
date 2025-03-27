@@ -1,0 +1,98 @@
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/LoraSemiBold.ttf");
+  font-family: "Lora";
+  font-weight: 600;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/PoppinsBold.ttf");
+  font-family: "Poppins";
+  font-weight: 700;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/LoraItalic.ttf");
+  font-family: "Lora";
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/PoppinsMedium.ttf");
+  font-family: "Poppins";
+  font-weight: 500;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/InterExtraBold.ttf");
+  font-family: "Inter";
+  font-weight: 800;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/ChewyRegular.ttf");
+  font-family: "Chewy";
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/PoppinsMediumItalic.ttf");
+  font-family: "Poppins";
+  font-weight: 500;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/GrandstanderRomanRegular.ttf");
+  font-family: "Grandstander";
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/GrandstanderBold.ttf");
+  font-family: "Grandstander";
+  font-weight: 700;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/PoppinsRegular.ttf");
+  font-family: "Poppins";
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/LoraRegular.ttf");
+  font-family: "Lora";
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/LoraMedium.ttf");
+  font-family: "Lora";
+  font-weight: 500;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/InterRegular.ttf");
+  font-family: "Inter";
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/IBMPlexSansMedium.ttf");
+  font-family: "IBM Plex Sans";
+  font-weight: 500;
+}
