@@ -5,6 +5,7 @@ export default function LandingPageWIPRowmarailie({
   marailie = "Mara Ilie",
   ceofounder = "CEO & Founder | The Visionary",
   craftingthe = "Crafting the vision, shaping the plot, and making this adventure legendary.",
+  image = "/images/mara-ilie.jpg", // Imaginea membrului echipei
   ...props
 }) {
   return (
@@ -25,13 +26,16 @@ export default function LandingPageWIPRowmarailie({
           {craftingthe}
         </Text>
       </div>
-      <Button
-        color="orange_accent1"
-        shape="round"
-        className="relative ml-[-20px] mt-[38px] w-[34px] rounded-[16px] px-2"
-      >
-        <Img src="images/img_link.svg" />
-      </Button>
+      <div className="relative ml-[-60px] mt-[-22px] flex items-center gap-2">
+        <img src={image} alt={marailie} className="w-24 h-24 rounded-full object-cover" />
+        <Button
+    color="orange_accent1"
+    shape="round"
+    className="absolute bottom-[-8px] right-[-4px] w-[28px] h-[28px] rounded-full flex items-center justify-center"
+  >
+    <Img src="images/img_link.svg" className="w-4 h-4" />
+  </Button>
+      </div>
     </div>
   );
 }

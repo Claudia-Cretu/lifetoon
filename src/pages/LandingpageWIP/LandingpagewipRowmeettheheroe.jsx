@@ -8,22 +8,37 @@ const data = [
     marailie: "Mara Ilie",
     ceofounder: "CEO & Founder | The Visionary",
     craftingthe: "Crafting the vision, shaping the plot, and making this adventure legendary.",
+    image: "/images/mara-ilie.png"
   },
   {
-    marailie: "Mara Ilie",
-    ceofounder: "CEO & Founder | The Visionary",
+    marailie: "Alexandru Stanica",
+    ceofounder: "CTO | The Code Sorcerer",
     craftingthe: "Weaving tech magic into every panel, turning dreams into digital reality.",
+    image: "/images/alexandru-stanica.png"
   },
   {
-    marailie: "Mara Ilie",
-    ceofounder: "CEO & Founder | The Visionary",
-    craftingthe: "Crafting the vision, shaping the plot, and making this adventure legendary.",
+    marailie: "Ruxandra Mazilu",
+    ceofounder: "CMO | The Story Amplifier",
+    craftingthe: "Spreading the word faster than a superhero on caffeine (or matcha).",
+    image: "/images/ruxandra-mazilu.png"
+  },
+  {
+    marailie: "Avasiloaie Alexandra",
+    ceofounder: "UX Lead | The Experience Shaper",
+    craftingthe: "Crafting intuitive journeys, because every hero deserves a great adventure.",
+    image: "/images/avasiloaie-alexandra.png"
+  },
+  {
+    marailie: "Cretu Claudia",
+    ceofounder: "Frontend Lead | The Pixel Crafter",
+    craftingthe: "Bringing our comic world to life, one crisp UI element at a time.",
+    image: "/images/cretu-claudia.png"
   },
 ];
 
 export default function LandingpagewipRowmeettheheroe() {
   return (
-    <div className="mt-16 flex h-[712px] items-end justify-center bg-[url(/public/images/img_group_78.svg)] bg-cover bg-no-repeat p-[30px] md:h-auto sm:p-5">
+    <div className="mt-16 flex h-auto items-end justify-center bg-[url(/public/images/img_group_78.svg)] bg-cover bg-no-repeat p-[30px] md:h-auto sm:p-5">
       <div className="mt-[52px] flex w-[96%] flex-col items-center gap-6 md:w-full">
         <div className="container-xs flex flex-col items-center px-14 md:px-5">
           <Heading size="headingmd" as="h2" className="text-[48px] font-bold md:text-[44px] sm:text-[38px]">
@@ -31,22 +46,19 @@ export default function LandingpagewipRowmeettheheroe() {
           </Heading>
         </div>
         <div className="flex flex-col items-center gap-6 self-stretch">
-          <div className="mt-12 flex w-[94%] gap-6 md:w-full md:flex-col">
+          <div className="mt-12 flex w-full flex-wrap justify-center gap-6">
             <Suspense fallback={<div>Loading feed...</div>}>
-              {data.map((d, index) => (
-                <LandingPageWIPRowmarailie {...d} key={"listmarailie" + index} />
+              {data.slice(0, 3).map((d, index) => (
+                <LandingPageWIPRowmarailie {...d} key={"listmarailie" + index} className="w-[30%] md:w-full" />
               ))}
             </Suspense>
           </div>
-          <div className="container-xs flex flex-col items-center px-14 md:px-5">
-            <div className="flex w-[70%] gap-6 md:w-full md:flex-col">
-              <LandingPageWIPRowclaudiacretu />
-              <LandingPageWIPRowclaudiacretu
-                claudiacretu="Avasiloaie Alexandra"
-                frontendlead="UX Lead | The Experience Shaper"
-                bringingour="Crafting intuitive journeys, because every hero deserves a great adventure."
-              />
-            </div>
+          <div className="mt-6 flex w-full flex-wrap justify-center gap-6">
+            <Suspense fallback={<div>Loading feed...</div>}>
+              {data.slice(3).map((d, index) => (
+                <LandingPageWIPRowmarailie {...d} key={"listmarailie" + (index + 3)} className="w-[30%] md:w-full" />
+              ))}
+            </Suspense>
           </div>
         </div>
       </div>

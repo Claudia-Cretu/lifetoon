@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Button, Img, CheckBox, Input, Text, Heading } from "../../components";
 import React from "react";
+import { Link } from 'react-router-dom';
 
 export default function FormnewPage() {
   return (
@@ -9,24 +10,24 @@ export default function FormnewPage() {
         <title>Lifetoon</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
-      <div className="relative h-[846px] w-full bg-white">
+      <div className="relative h-[100vh] w-full bg-white overflow-hidden flex items-center justify-center">
         <Img
           src="images/img_rectangle_18_orange_100.png"
           alt="Image"
-          className="absolute right-[0.79px] top-0 m-auto h-[770px] w-[54%] object-contain"
+          className="absolute right-[-5%] top-0 m-auto h-[690px] w-[53%] object-cover"
         />
         <Img
           src="images/img_rectangle_15_orange_accent1.png"
           alt="Image"
-          className="absolute bottom-0 left-0 m-auto h-[352px] w-[52%] object-contain"
+          className="absolute bottom-0 left-[-5%] m-auto h-[302px] w-[53%] object-cover"
         />
-        <div className="container-xs absolute left-0 right-0 top-[9%] mx-20 flex flex-1 items-start md:relative md:mx-0 md:flex-col md:px-5">
-          <Img
-            src="images/img_vector_dark_blue_secondary.svg"
-            alt="Vector"
-            className="h-[120px] w-[18%] object-contain md:w-full"
-          />
-          <div className="mt-[78px] flex flex-1 self-end px-11 md:self-stretch md:px-5">
+        <Img
+          src="images/img_vector_dark_blue_secondary.svg"
+          alt="Vector"
+          className="absolute top-4 left-4 h-[80px] w-auto object-contain z-20"
+        />
+        <div className="container-xs relative z-10 flex justify-center md:px-5">
+          <div className="flex w-full justify-center">
             <div className="flex w-[74%] flex-col items-center justify-center gap-[30px] rounded-[24px] bg-white px-14 py-16 shadow-lg md:w-full md:p-5">
               <div className="mx-1 flex flex-col items-center gap-1 md:mx-0">
                 <Heading size="headings" as="h1" className="text-[36px] font-bold md:text-[34px] sm:text-[32px]">
@@ -56,19 +57,25 @@ export default function FormnewPage() {
                   id="check"
                   className="gap-3 font-inter text-[16px] text-dark_blue_secondary"
                 />
-                <Button
-                  size="md"
-                  rightIcon={
-                    <Img
-                      src="images/img_arrowright.svg"
-                      alt="Arrow Right"
-                      className="mb-0.5 mt-1 h-[22px] w-[22px] object-contain"
-                    />
-                  }
-                  className="gap-1 self-stretch rounded-[22px] border-[1.43px] border-solid border-dark_blue_secondary px-[32.57px] font-medium italic shadow-xl sm:px-5"
-                >
-                  Join the Waitlist
-                </Button>
+               
+                <Link to="/confirmationatsubmitform" className="w-full">
+                  <Button
+                    size="md"
+                    rightIcon={
+                      <Img
+                        src="images/img_arrowright.svg"
+                        alt="Arrow Right"
+                        className="mb-0.5 mt-1 h-[22px] w-[22px] object-contain"
+                      />
+                    }
+                    className="w-full gap-1 rounded-[22px] border-[1.43px] border-solid border-dark_blue_secondary border-b-8 px-[32.57px] font-medium italic shadow-xl sm:px-5
+                              bg-orange_accent1 text-dark_blue_secondary
+                              hover:bg-yellow-200 hover:border-transparent
+                              transition-all duration-300 ease-in-out"
+                  >
+                    Join the Waitlist
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

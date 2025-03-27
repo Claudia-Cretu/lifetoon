@@ -10,9 +10,12 @@ import LandingpagewipRowmeettheheroe from "./LandingpagewipRowmeettheheroe";
 import LandingpagewipRowquestion from "./LandingpagewipRowquestion";
 import LandingpagewipStackwhylifetoo from "./LandingpagewipStackwhylifetoo";
 import React from "react";
+import { Link } from 'react-router-dom';
+
 
 export default function LandingpageWIPPage() {
   return (
+    
     <>
       <Helmet>
         <title>Lifetoon</title>
@@ -44,19 +47,25 @@ export default function LandingpageWIPPage() {
                   one-of-a-kind narratives to treasure forever.
                 </Text>
               </div>
-              <Button
-                size="lg"
-                rightIcon={
-                  <Img
-                    src="images/img_arrowright.svg"
-                    alt="Arrow Right"
-                    className="mb-1 mt-0.5 h-[32px] w-[32px] object-contain"
-                  />
-                }
-                className="min-w-[394px] gap-1.5 rounded-[30px] border-2 border-solid border-dark_blue_secondary px-[30px] font-medium italic shadow-md sm:px-5"
-              >
-                Create your comic now
-              </Button>
+              <Link to="formnew">
+  <Button
+    size="lg"
+    rightIcon={
+      <Img
+        src="images/img_arrowright.svg"
+        alt="Arrow Right"
+        className="mb-1 mt-0.5 h-[32px] w-[32px] object-contain"
+      />
+    }
+    className="min-w-[394px] gap-1.5 rounded-[30px] px-[30px] font-medium italic shadow-md sm:px-5 
+               bg-orange_accent1 text-dark_blue_secondary
+               border-2 border-solid border-dark_blue_secondary border-b-8
+               hover:bg-yellow-200 hover:border-0 hover:text-dark_blue_secondary
+               transition-all duration-300 ease-in-out"
+  >
+    Create your comic now
+  </Button>
+</Link>
             </div>
             <Img
               src="images/img_rectangle_18.png"

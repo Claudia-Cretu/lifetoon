@@ -25,7 +25,7 @@ const data = [
 
 export default function LandingpagewipStackwhylifetoo() {
   return (
-    <div className="relative h-[676px] px-[62px] md:px-5">
+    <div className="relative h-[670px] px-[62px] md:px-5">
       <div className="absolute bottom-[-1px] left-0 right-0 mx-auto flex flex-1 flex-col items-center gap-12 px-14 md:px-5">
         <div className="flex flex-col items-center">
           <Heading size="headingmd" as="h1" className="text-[48px] font-bold md:text-[44px] sm:text-[38px]">
@@ -43,12 +43,13 @@ export default function LandingpagewipStackwhylifetoo() {
           </Suspense>
         </div>
       </div>
-      <div className="absolute right-[4%] top-0 m-auto flex h-[298px] w-[28%] rotate-[-180deg] items-start justify-center bg-[url(/public/images/img_frame_14478.svg)] bg-cover bg-no-repeat px-[30px] py-[84px] md:h-auto md:py-5 sm:p-5">
+      <div className="absolute right-[6%] top-[-14] m-auto flex h-[298px] w-[28%] rotate-[-360deg] items-start justify-center bg-[url(/public/images/img_frame_14478.png)] bg-cover bg-no-repeat px-[30px] py-[84px] md:h-auto md:py-5 sm:p-7">
         <Heading
           size="text2xl"
           as="p"
-          className="mb-2.5 flex-1 rotate-[-180deg] text-center !font-grandstander text-[24px] font-normal uppercase leading-[23px] md:text-[22px]"
-        >
+          className="mb-2.5 flex-1 rotate-[-360deg] text-center !font-grandstander text-[24px] font-normal uppercase leading-[23px] md:text-[12px]"
+          style={{ marginTop: '32px' }}
+       >
           <span>I never imagined my proposal story could look like a&nbsp;</span>
           <span className="font-bold">real comic book. It’s now framed in our home! ✨</span>
         </Heading>

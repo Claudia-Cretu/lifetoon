@@ -1,5 +1,6 @@
 import { Button, Img, Text, Heading } from "../../components";
 import React from "react";
+import { Link } from 'react-router-dom';
 
 export default function LandingpagewipCtawaitlist() {
   return (
@@ -19,19 +20,21 @@ export default function LandingpagewipCtawaitlist() {
               comics. Get exclusive perks & early-bird discounts!
             </Text>
           </div>
+          <Link to="/formnew">
           <Button
-            size="lg"
-            rightIcon={
-              <Img
-                src="images/img_arrowright.svg"
-                alt="Arrow Right"
-                className="mb-1 mt-0.5 h-[32px] w-[32px] object-contain"
-              />
-            }
-            className="min-w-[394px] gap-2 rounded-[30px] border-2 border-solid border-dark_blue_secondary px-[30px] font-medium italic shadow-md sm:px-5"
-          >
-            Join the waitlist today
-          </Button>
+  size="lg"
+  rightIcon={
+    <Img
+      src="images/img_arrowright.svg"
+      alt="Arrow Right"
+      className="mb-1 mt-0.5 h-[32px] w-[32px] object-contain"
+    />
+  }
+  className="min-w-[394px] gap-2 rounded-[30px] border-2 border-solid border-dark_blue_secondary border-t-0 border-l-0 border-r-0 border-b-8 px-[30px] font-medium italic shadow-md sm:px-5 hover:bg-yellow-200 hover:bg-opacity-70 hover:border-transparent hover:text-dark_blue_secondary transition-all duration-300"
+>
+  Join the waitlist today
+</Button>
+      </Link>
         </div>
       </div>
     </div>

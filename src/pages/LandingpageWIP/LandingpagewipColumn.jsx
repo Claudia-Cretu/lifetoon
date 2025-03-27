@@ -10,10 +10,10 @@ const data = [
       "Start with your imagination. Upload a photo, describe your characters, and tell us what makes this story special to you.",
   },
   {
-    image: "images/img_user.svg",
-    title: "You share your story",
+    image: "images/img_frame_14450.svg",
+    title: "We illustrate it for you",
     description:
-      "Start with your imagination. Upload a photo, describe your characters, and tell us what makes this story special to you.",
+      "Our smart tools turn your words and images into stunning illustrations, crafted to match your vision.",
   },
   {
     image: "images/img_close.svg",

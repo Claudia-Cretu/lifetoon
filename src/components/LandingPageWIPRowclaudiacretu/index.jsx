@@ -5,6 +5,7 @@ export default function LandingPageWIPRowclaudiacretu({
   claudiacretu = "Claudia Cretu",
   frontendlead = "Frontend Lead | The Pixel Crafter",
   bringingour = "Bringing our comic world to life, one crisp UI element at a time.",
+  image = "/images/claudia-cretu.jpg", // Imaginea membrului echipei
   ...props
 }) {
   return (
@@ -23,13 +24,16 @@ export default function LandingPageWIPRowclaudiacretu({
           {bringingour}
         </Text>
       </div>
-      <Button
-        color="orange_accent1"
-        shape="round"
-        className="relative ml-[-20px] mt-[38px] w-[34px] rounded-[16px] px-2"
-      >
-        <Img src="images/img_link.svg" />
-      </Button>
+      <div className="relative ml-[-20px] mt-[38px] flex items-center gap-2">
+        <img src={image} alt={claudiacretu} className="w-10 h-10 rounded-full object-cover" />
+        <Button
+          color="orange_accent1"
+          shape="round"
+          className="w-[34px] rounded-[16px] px-2"
+        >
+          <Img src="images/img_link.svg" />
+        </Button>
+      </div>
     </div>
   );
 }

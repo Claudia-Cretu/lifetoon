@@ -12,12 +12,7 @@ export default function Footer({ ...props }) {
               © 2025 Lifetoon. All rights reserved.
             </Heading>
           </div>
-          <div className="flex w-[14%] justify-between gap-5 self-end sm:w-full">
-            <Img src="images/img_footers_social_icon.svg" alt="Footerssocial" className="h-[24px]" />
-            <Img src="images/img_footers_social_icon.svg" alt="Footerssocial" className="h-[24px]" />
-            <Img src="images/img_footers_social_icon.svg" alt="Footerssocial" className="h-[24px]" />
-            <Img src="images/img_footers_social_icon.svg" alt="Footerssocial" className="h-[24px]" />
-          </div>
+          
         </div>
       </div>
     </footer>
