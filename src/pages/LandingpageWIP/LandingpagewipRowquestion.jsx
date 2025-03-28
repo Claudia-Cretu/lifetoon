@@ -1,7 +1,6 @@
 import { Heading } from "../../components";
 import LandingPageWIPFaqitem from "../../components/LandingPageWIPFaqitem";
-import React, { Suspense, useState } from "react";
-
+import React, { useState } from "react";
 
 const data = [
   {
@@ -38,14 +37,18 @@ export default function LandingpagewipRowquestion() {
       <div className="flex flex-col items-center justify-center bg-white py-20 md:py-5">
         <div className="container-xs flex flex-col gap-16 md:px-5 sm:gap-8">
           <div className="flex justify-center px-14 md:px-5">
-            <Heading size="headingmd" as="h2" className="text-[48px] font-bold md:text-[44px] sm:text-[38px]">
+            <Heading
+              size="headingmd"
+              as="h2"
+              className="text-[48px] font-bold md:text-[44px] sm:text-[38px]"
+            >
               Still curious? Let&#39;s clear things up!
             </Heading>
           </div>
           <div className="flex flex-col">
             {data.map((d, index) => (
-              <LandingPageWIPFaqitem 
-                key={"listquestion" + index} 
+              <LandingPageWIPFaqitem
+                key={"listquestion" + index}
                 question={d.question}
                 description={d.description}
                 isActive={activeIndex === index}
