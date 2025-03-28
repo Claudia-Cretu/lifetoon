@@ -5,7 +5,8 @@ export default function LandingPageWIPRowmarailie({
   marailie = "Mara Ilie",
   ceofounder = "CEO & Founder | The Visionary",
   craftingthe = "Crafting the vision, shaping the plot, and making this adventure legendary.",
-  image = "/images/mara-ilie.jpg", // Imaginea membrului echipei
+  image = "/images/mara-ilie.jpg", 
+  linkedinUrl = "", // Adăugăm linkedinUrl
   ...props
 }) {
   return (
@@ -29,12 +30,13 @@ export default function LandingPageWIPRowmarailie({
       <div className="relative ml-[-60px] mt-[-22px] flex items-center gap-2">
         <img src={image} alt={marailie} className="w-24 h-24 rounded-full object-cover" />
         <Button
-    color="orange_accent1"
-    shape="round"
-    className="absolute bottom-[-8px] right-[-4px] w-[28px] h-[28px] rounded-full flex items-center justify-center"
-  >
-    <Img src="images/img_link.svg" className="w-4 h-4" />
-  </Button>
+          color="orange_accent1"
+          shape="round"
+          className="absolute bottom-[-20px] right-[18px] w-[28px] h-[28px] rounded-full flex items-center justify-center"
+          onClick={() => window.open(linkedinUrl, "_blank")} // Deschide link-ul LinkedIn într-o fereastră nouă
+        >
+          <Img src="images/img_link.svg" className="w-4 h-4" />
+        </Button>
       </div>
     </div>
   );

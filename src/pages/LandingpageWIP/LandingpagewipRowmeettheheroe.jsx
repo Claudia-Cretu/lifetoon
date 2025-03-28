@@ -1,5 +1,5 @@
 import { Heading } from "../../components";
-import LandingPageWIPRowclaudiacretu from "../../components/LandingPageWIPRowclaudiacretu";
+// import LandingPageWIPRowclaudiacretu from "../../components/LandingPageWIPRowclaudiacretu";
 import LandingPageWIPRowmarailie from "../../components/LandingPageWIPRowmarailie";
 import React, { Suspense } from "react";
 
@@ -8,31 +8,36 @@ const data = [
     marailie: "Mara Ilie",
     ceofounder: "CEO & Founder | The Visionary",
     craftingthe: "Crafting the vision, shaping the plot, and making this adventure legendary.",
-    image: "/images/mara-ilie.png"
+    image: "/images/mara-ilie.png",
+    linkedinUrl: "https://www.linkedin.com/in/mara-ilie"
   },
   {
     marailie: "Alexandru Stanica",
     ceofounder: "CTO | The Code Sorcerer",
     craftingthe: "Weaving tech magic into every panel, turning dreams into digital reality.",
-    image: "/images/alexandru-stanica.png"
+    image: "/images/alexandru-stanica.png",
+    linkedinUrl: "https://www.linkedin.com/in/alexandru-stanica-14723428b/"
   },
   {
     marailie: "Ruxandra Mazilu",
     ceofounder: "CMO | The Story Amplifier",
     craftingthe: "Spreading the word faster than a superhero on caffeine (or matcha).",
-    image: "/images/ruxandra-mazilu.png"
+    image: "/images/ruxandra-mazilu.png",
+    linkedinUrl: "https://www.linkedin.com/in/ruxandramazilu/"
   },
   {
     marailie: "Avasiloaie Alexandra",
     ceofounder: "UX Lead | The Experience Shaper",
     craftingthe: "Crafting intuitive journeys, because every hero deserves a great adventure.",
-    image: "/images/avasiloaie-alexandra.png"
+    image: "/images/avasiloaie-alexandra.png",
+    linkedinUrl: "https://www.linkedin.com/in/alexandra-avasiloaie-848600177/"
   },
   {
     marailie: "Cretu Claudia",
     ceofounder: "Frontend Lead | The Pixel Crafter",
     craftingthe: "Bringing our comic world to life, one crisp UI element at a time.",
-    image: "/images/cretu-claudia.png"
+    image: "/images/cretu-claudia.png",
+    linkedinUrl: "https://www.linkedin.com/in/claudia-cretu-746093271/"
   },
 ];
 

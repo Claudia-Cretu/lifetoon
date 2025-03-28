@@ -13,7 +13,7 @@ export default function LandingpagewipRowOne() {
       <div className="container-xs flex justify-center px-14 md:px-5">
         <div className="flex w-full items-center gap-4 md:flex-col">
           <div className="flex w-[46%] flex-col items-end gap-2 md:w-full">
-            <div className="mr-8 flex h-[168px] w-[56%] items-center justify-center bg-[url(/public/images/img_dialog_baloon.svg)] bg-cover bg-no-repeat px-2 md:mr-0 md:h-auto md:w-full">
+            <div className="mr-8 flex h-[176px] w-[56%] items-center justify-center bg-[url(/public/images/img_dialog_baloon.svg)] bg-cover bg-no-repeat px-4 md:mr-0 md:h-auto md:w-full">
               <Heading
                 size="text2xl"
                 as="h2"
@@ -25,7 +25,7 @@ export default function LandingpagewipRowOne() {
                 <span>&nbsp;Only)</span>
               </Heading>
             </div>
-            <div className="flex flex-col gap-[30px] self-stretch rounded-[24px] border-r border-solid border-avatar-__-_-50 bg-white p-6 shadow-lg sm:p-5">
+            <fieldset disabled className="flex flex-col gap-[30px] self-stretch rounded-[24px] border-r border-solid border-avatar-__-_-50 bg-white p-6 shadow-lg sm:p-5">
               <div className="flex items-center justify-between gap-5">
                 <Img src="images/img_vector.svg" alt="Vector" className="h-[30px] w-[12%] object-contain" />
                 <Img src="images/img_brush.svg" alt="Brush" className="h-[22px]" />
@@ -41,15 +41,6 @@ export default function LandingpagewipRowOne() {
                       size="xs"
                       name="weburl"
                       placeholder={`image_01.jpg`}
-                      suffix={
-                        <div className="flex h-[18px] w-[18px] items-center justify-center">
-                          <Img
-                            src="images/img_close_deep_purple_a200.svg"
-                            alt="Close"
-                            className="h-[20px] w-[18px] object-contain"
-                          />
-                        </div>
-                      }
                       className="gap-4 rounded-[20px] border-[0.93px] border-gray-300_01 px-2.5 font-lora italic"
                       disabled
                     />
@@ -67,8 +58,9 @@ export default function LandingpagewipRowOne() {
                       shape="round"
                       name="prompttwo_one"
                       placeholder={`He was nervous. I could tell by the way he kept fiddling with his jacket pocket. It wasn’t a grand setup. No flash mob, no photographer hiding in the bushes. Just us. A quiet bench. The sound of leaves crunching under our feet. He forgot half the words he wanted to say. I said yes before he even finished the sentence. And somehow, that made it perfect. Because it felt real. It felt like us.`}
-                      className="rounded-lg !border-[0.93px] !border-deep_purple-a200 px-2.5 font-lora italic leading-[22px] text-black-900"
-                      disabled />
+                      className="rounded-lg !border-[0.93px] !border-deep_purple-a200 px-2.5 font-lora italic leading-[22px] text-black-900 resize-none"
+                      disabled
+                    />
                   </div>
                   <div className="flex flex-col items-start gap-2">
                     <Heading as="h6" className="text-[16px] font-medium">
@@ -81,26 +73,21 @@ export default function LandingpagewipRowOne() {
                       placeholder={`American Comic Book`}
                       options={dropDownOptions}
                       className="gap-4 self-stretch rounded-lg border-[0.93px] border-solid border-gray-30301 px-2.5 font-lora italic cursor-not-allowed"
-                      disabled/>
+                      disabled
+                    />
                   </div>
                 </div>
                 <Button
                   color="deep_purple_A200"
                   size="sm"
                   shape="round"
-                  leftIcon={
-                    <Img
-                      src="images/img_ai_essentials_icon_set.svg"
-                      alt="Ai Essentials Icon Set"
-                      className="mb-0.5 h-[22px] w-[22px] object-contain "
-                      disabled  />
-                  }
-                  className="gap-2 self-stretch rounded-[18px] px-[34px] sm:px-5 cursor-not-allowed"
+                  className="gap-2 self-stretch rounded-[18px] px-[34px] sm:px-5 cursor-not-allowed pointer-events-none"
+                  disabled
                 >
                   Creating your comic...
                 </Button>
               </div>
-            </div>
+            </fieldset>
           </div>
           <div className="relative h-[732px] flex-1 content-center md:h-auto md:w-full md:flex-none md:self-stretch">
             <div className="flex flex-1 flex-col items-start">
@@ -108,8 +95,8 @@ export default function LandingpagewipRowOne() {
                 <Heading
                   size="text1xl"
                   as="p"
-                  className="mb-[50px] flex- overflow-hidden text-center !font-grandstander text-[26px] font-normal uppercase leading-[23px] md:text-[22px] mt-[60px]" // Adăugat mt-[20px] pentru a muta textul mai jos
->
+                  className="mb-[50px] flex- overflow-hidden text-center !font-grandstander text-[26px] font-normal uppercase leading-[23px] md:text-[22px] mt-[60px]"
+                >
                   <span>tHIS COULD BE YOUR COMIC&nbsp;</span>
                   <span className="font-bold">BOOK</span>
                   <span>!😱</span>
@@ -121,35 +108,17 @@ export default function LandingpagewipRowOne() {
                   alt="Vectornine"
                   className="mb-2.5 h-[382px] w-[24%] self-end object-contain sm:w-full"
                 />
-                <div className="relative ml-[-16px] h-[528px] flex-1 rotate-[8deg] bg-white py-7 sm:ml-0 sm:w-full sm:flex-none sm:self-stretch sm:py-5">
-                  <div className="absolute left-0 right-0 top-[7%] mx-auto h-[392px] w-[90%] border-2 border-solid border-black-900" />
+                <div className="relative ml-[28px] ml-[-18px] h-[528px] flex-1  bg-white py-7 sm:ml-0 sm:w-full sm:flex-none sm:self-stretch sm:py-5">
+                  <div className="absolute left-0 right-0 top-[7%] mx-auto h-[392px] w-[90%] " />
                   <img 
-      src="/images/proposal.png" // Asigurați-vă că aveți această imagine în folderul public/images
-      alt="Proposal"
-      className="w-full h-full object-cover"
-    />
-                  <Heading
-                    size="text2xl"
-                    as="p"
-                    className="absolute bottom-[4%] left-[7.73px] m-auto flex-1 text-center !font-chewy text-[24px] font-normal leading-[31px] !text-black-900 md:text-[22px]"
-                  >
-                    The proposal
-                  </Heading>
-                  <Heading
-                    size="textxs"
-                    as="p"
-                    className="absolute bottom-[2px] left-[3.69px] m-auto flex-1 text-center !font-lora text-[12px] font-normal leading-[15px] !text-black-900"
-                  >
-                    10/10/2010
-                  </Heading>
+                    src="/images/proposal2.png"
+                    alt="Proposal"
+                    className="w-full h-full "
+                  />
+                 
                 </div>
               </div>
             </div>
-            <Img
-              src="images/img_settings.svg"
-              alt="Settings"
-              className="absolute bottom-0 left-[21%] top-0 my-auto h-[18px]"
-            />
           </div>
         </div>
       </div>
