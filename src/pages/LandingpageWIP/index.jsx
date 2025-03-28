@@ -12,10 +12,8 @@ import LandingpagewipStackwhylifetoo from "./LandingpagewipStackwhylifetoo";
 import React from "react";
 import { Link } from 'react-router-dom';
 
-
 export default function LandingpageWIPPage() {
   return (
-    
     <>
       <Helmet>
         <title>Lifetoon</title>
@@ -48,30 +46,30 @@ export default function LandingpageWIPPage() {
                 </Text>
               </div>
               <Link to="formnew">
-  <Button
-    size="lg"
-    rightIcon={
-      <Img
-        src="images/img_arrowright.svg"
-        alt="Arrow Right"
-        className="mb-1 mt-0.5 h-[32px] w-[32px] object-contain"
-      />
-    }
-    className="min-w-[394px] gap-1.5 rounded-[30px] px-[30px] font-medium italic shadow-md sm:px-5 
-               bg-orange_accent1 text-dark_blue_secondary
-               border-2 border-solid border-dark_blue_secondary border-b-8
-               hover:bg-yellow-200 hover:border-0 hover:text-dark_blue_secondary
-               transition-all duration-300 ease-in-out"
-  >
-    Create your comic now
-  </Button>
-</Link>
+                <Button
+                  size="lg"
+                  rightIcon={
+                    <Img
+                      src="images/img_arrowright.svg"
+                      alt="Arrow Right"
+                      className="mb-1 mt-0.5 h-[32px] w-[32px] object-contain"
+                    />
+                  }
+                  className="min-w-[394px] gap-1.5 rounded-[30px] px-[30px] font-medium italic shadow-md sm:px-5 
+                             bg-orange_accent1 text-dark_blue_secondary
+                             border-2 border-solid border-dark_blue_secondary border-b-8
+                             hover:bg-yellow-200 hover:border-0 hover:text-dark_blue_secondary
+                             transition-all duration-300 ease-in-out"
+                >
+                  Create your comic now
+                </Button>
+              </Link>
             </div>
-            <Img
+            {/* <Img
               src="images/img_rectangle_18.png"
               alt="Image"
-              className="absolute right-px top-0 m-auto h-[842px] w-[36%] object-contain"
-            />
+              className="absolute right-px top-20 m-auto h-[842px] w-[36%] object-contain"
+            /> */}
           </div>
           <div className="relative mt-[130px] h-[1544px] md:h-auto">
             <Img src="images/img_rectangle_15.png" alt="Image" className="mt-36 h-[1000px] w-[44%] object-contain" />
@@ -85,6 +83,14 @@ export default function LandingpageWIPPage() {
           <LandingpagewipRowmeettheheroe />
           <LandingpagewipRowquestion />
           <LandingpagewipCtawaitlist />
+          
+          {/* Imaginea peste bula galbenă */}
+          <Img
+            src="images/heropicture.jpg" // Înlocuiește cu calea corectă a imaginii tale
+            alt="Poza pe bula galbenă"
+            className="absolute top-[60%] left-[80%] transform translate-x-[-50%] translate-y-[-50%] w-[25%] h-[65%] md:w-[30%] z-10" 
+          />
+          
           <Footer />
         </div>
       </div>
