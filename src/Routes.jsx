@@ -4,6 +4,7 @@ import NotFound from "pages/NotFound";
 import LandingpageWIP from "pages/LandingpageWIP";
 import Formnew from "pages/Formnew";
 import Confirmationatsubmitform from "pages/Confirmationatsubmitform";
+import Tocome from "pages/Tocome";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
@@ -20,6 +21,10 @@ const ProjectRoutes = () => {
     {
       path: "confirmationatsubmitform",
       element: <Confirmationatsubmitform />,
+    },
+    {
+      path: "tocome",
+      element: <Tocome />,
     },
 
    

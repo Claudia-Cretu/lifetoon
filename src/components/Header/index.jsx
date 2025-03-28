@@ -11,39 +11,39 @@ export default function Header({ ...props }) {
         </Link>
         <ul className="flex flex-wrap gap-12">
           <li>
-            {/* <Link to="LandingPageWIPPricingpages">
+            <Link to="/landingpagewip">
               <Heading size="headingxs" as="h5" className="!font-lora text-[20px] font-semibold">
                 Home
               </Heading>
             </Link>
           </li>
           <li>
-            <Link to="/how-it-works">
+            <Link to="/formnew">
               <Heading size="headingxs" as="h5" className="!font-lora text-[20px] font-semibold">
-                How it works
+                Create your comic
               </Heading>
             </Link>
           </li>
           <li>
-            <Link to="/pricing">
+            <Link to="/tocome">
               <Heading size="headingxs" as="h5" className="!font-lora text-[20px] font-semibold">
                 Pricing
               </Heading>
             </Link>
           </li>
           <li>
-            <Link to="/our-team">
+            <Link to="/tocome">
               <Heading size="headingxs" as="h5" className="!font-lora text-[20px] font-semibold">
-                Our team
+                About us
               </Heading>
             </Link>
           </li>
           <li>
-            <Link to="/faq">
+            <Link to="/formnew">
               <Heading size="headingxs" as="h5" className="!font-lora text-[20px] font-semibold">
-                FAQ
+                Contact
               </Heading>
-            </Link> */}
+            </Link>
           </li>
         </ul>
       </div>
